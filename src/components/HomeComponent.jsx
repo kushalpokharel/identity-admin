@@ -84,7 +84,7 @@ function Home(){
             
             
                 console.log(arrelem);
-                let dat = fromUtf8(Object.values(arrelem)[0]);
+                let dat = fromUtf8(arrelem);
                 let message = toBuffer(dat);
                 let msgHash = hashPersonalMessage(message);
                 let privateKey = new Buffer.from('556ea9f6abff39f133a43158e0860d543e7f7d7d186d24a2e8627e3dc803686e','hex');
